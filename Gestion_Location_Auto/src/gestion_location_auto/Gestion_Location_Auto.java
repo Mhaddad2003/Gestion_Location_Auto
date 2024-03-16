@@ -7,6 +7,7 @@ public class Gestion_Location_Auto {
          CreateDB db = new CreateDB();
          CreateTables ct = new CreateTables();
          insertVoitures inv = new insertVoitures();
+         ajouterV aj = new ajouterV();
     }
     
 }

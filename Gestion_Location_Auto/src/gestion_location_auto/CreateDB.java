@@ -17,9 +17,8 @@ public class CreateDB {
             
             BufferedReader br = new BufferedReader(new FileReader("sql\\CreateDB.sql"));
             StringBuilder sqlBuilder = new StringBuilder(); 
-            String line;
-            while ((line = br.readLine()) != null)
-                sqlBuilder.append(line).append("\n");
+            String line = br.readLine();
+            sqlBuilder.append(line);
             String sql = sqlBuilder.toString();
             
         

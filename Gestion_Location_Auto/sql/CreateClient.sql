@@ -4,5 +4,6 @@ create table client(
     prenom VARCHAR(15),
     tel VARCHAR(20) NOT NULL,
     Permis VARCHAR(30) NOT NULL,
+    password VARCHAR(20),
     PRIMARY KEY(CIN)
 );
