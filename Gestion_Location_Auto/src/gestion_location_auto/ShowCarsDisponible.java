@@ -1,4 +1,5 @@
-package source_code;
+package gestion_location_auto;
+
 import java.io.* ;
 import java.sql.*;
 import com.mysql.jdbc.Driver;
@@ -21,7 +22,7 @@ public class ShowCarsDisponible {
             String conString = protocole +  "//" + ip +  ":" + port+"/Mini_Projet" ;
             // Identifiants de connexion et mot de passe
             String nomConnexion =  "root" ;  // depend du contexte
-            String motDePasse =  "Ana@mohamed2003" ;  // depend du contexte
+            String motDePasse =  "1234" ;  // depend du contexte
             // C. Connexion
             Connection conct = DriverManager.getConnection(
                     conString, nomConnexion, motDePasse) ;
@@ -37,7 +38,7 @@ public class ShowCarsDisponible {
                 System.out.println("Modèle : " + rs.getString("Module"));
                 System.out.println("Marque : " + rs.getString("Marque"));
                 System.out.println("Prix : " + rs.getInt("Prix"));
-                System.out.println("Couleur : " + rs.getString("Coleur"));
+                System.out.println("Couleur : " + rs.getString("Couleur"));
                 System.out.println("-----------------------------------");
             }
 

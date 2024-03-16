@@ -12,7 +12,7 @@ public class ajouterV {
     
     public ajouterV() {
 
-        String connectionUrl = "jdbc:mysql://localhost:3306/location_auto";
+        String connectionUrl = "jdbc:mysql://localhost:3306/Mini_Projet";
         Scanner in = new Scanner(System.in,"UTF-8");
 
         try (Connection conn = DriverManager.getConnection(connectionUrl, "root", "1234")) {

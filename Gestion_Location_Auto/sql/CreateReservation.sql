@@ -1,7 +1,6 @@
 create Table Reservation(
     IdR int auto_increment,
-    DateD DATE NOT null,
-    DateF DATE not null,
+    DaysNumber int not null,
     CIN VARCHAR(15),
     Matricule VARCHAR(20),
     PRIMARY KEY(IdR),

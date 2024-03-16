@@ -1,9 +1,12 @@
-package source_code;
+package gestion_location_auto;
 
 import java.sql.*;
 import java.util.Scanner;
 
 public class LogIn {
+    
+    private int valid;
+    
     public LogIn() {
         try {
             // Load the MySQL JDBC driver
@@ -17,7 +20,7 @@ public class LogIn {
             String conString = protocol + "//" + ip + ":" + port + "/Mini_projet";
             // Connection credentials
             String nomConnexion = "root";  // depends on the context
-            String motDePasse = "Ana@mohamed2003";  // depends on the context
+            String motDePasse = "1234";  // depends on the context
             // Connection
             Connection conct = DriverManager.getConnection(conString, nomConnexion, motDePasse);
 

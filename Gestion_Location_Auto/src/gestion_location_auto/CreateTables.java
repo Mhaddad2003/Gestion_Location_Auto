@@ -9,7 +9,7 @@ public class CreateTables {
     
     public CreateTables() {
 
-        String connectionUrl = "jdbc:mysql://localhost:3306/location_auto";
+        String connectionUrl = "jdbc:mysql://localhost:3306/Mini_Projet";
 
         try (Connection conn = DriverManager.getConnection(connectionUrl, "root", "1234")) {
             Class.forName("com.mysql.cj.jdbc.Driver");
